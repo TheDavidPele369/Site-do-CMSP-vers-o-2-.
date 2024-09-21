@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Spirit - Fórum de Discussão</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1><span class="branco">Brain</span> Spirit</h1>
+        </div>
+        <div class="menu">
+            <a href="#">Auxílio em atividades do CMSP (Segundo ano D)</a>
+        </div>
+    </div>     
+
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Artigos </h2>
+            <ul>
+                <li><a href="#economia">Língua Portuguesa</a></li>
+                <li><a href="#matematica">Matemática</a></li>
+                <li><a href="#eletrolise">Química</a></li>
+                <li><a href="#jogos">Física</a></li>
+                <li><a href="#revisao">Educação Financeira</a></li>
+                <li><a href="#escrita">Orientação de Estudos</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <!-- Artigo Principal -->
+            <div class="featured-article" id="principal">
+                <h2>Acesso à plataforma do CMSP:</h2>
+                <span>20 de Setembro de 2024</span>
+                <img src="./Imagens/download.jpg" width="90%">
+                <p>Site de auxílio criado por David Marques. Esta é uma nova versão do website. Aproveite!</p>
+                <a href="#principal">Leia Mais...</a>
+            </div>
+
+            <!-- Outras Postagens -->
+            <div class="posts">
+                <div class="post" id="economia">
+                    <h2 class="toggle-content">Roteiro de pesquisa – Tarefa do dia
+                    </h2>
+                    <div class="post-content">
+                        <span>18 de Setembro de 2024</span>
+                        
+                        <p>1) IBGE / Gráfico / Estado / Brasil. 2) D / 3) Quantitativo da população indígena do Brasil / Indígenas do Brasil / Indicação da cor ou raça de cada pessoa da residência / Quantitativo da população indígena do Brasil por cada Estado e por região geográfica. 4) B.</p>
+                    </div>
+                </div>
+
+                <div class="post" id="matematica">
+                    <h2 class="toggle-content">Gráficos – Parte II</h2>
+                    <div class="post-content">
+                        <span>13 de Setembro de 2024</span>
+                        <img src="./Imagens/math-header.jpg" width="100%">
+                        <p>1- A, C, E / 2- B, C, E / 3- D.</p>
+                    </div>
+                </div>
+
+                <div class="post" id="eletrolise">
+                    <h2 class="toggle-content">A química e o desenvolvimento científico I – Tarefa do dia
+
+                    </h2>
+                    <div class="post-content">
+                        <span>20 de Setembro de 2024</span>
+                        <img src="./Imagens/Ele_ignea.png" width="100%">
+                        <p>1) URÂNIO. / 2) A, B, D, E. / 3) B. / 4) C. </p>
+                    </div>
+                </div>
+
+                <div class="post" id="jogos">
+                    <h2 class="toggle-content">Experiência de Oersted – Tarefa do dia
+
+                    </h2>
+                    <div class="post-content">
+                        <span>20 de Setembro de 2024</span>
+                        <img src="./Imagens/maxresdefault.jpg" width="100%">
+                        <p>1) C. / 2) D. / 3) A.  </p>
+                    </div>
+                </div>
+
+                <div class="post" id="revisao">
+                    <h2 class="toggle-content">Domando os gastos – Tarefa do dia
+
+                    </h2>
+                    <div class="post-content">
+                        <span>20 de Setembro de 2024</span>
+                        <img src="-" width="100%">
+                        <p>1) B, C, D. / 2) C. / 3) B. </p>
+                    </div>
+                </div>
+
+                <div class="post" id="escrita">
+                    <h2 class="toggle-content">Escrita Criativa – Tarefa do dia</h2>
+                    <div class="post-content">
+                        <span>20 de Setembro de 2024</span>
+                        <img src="./Imagens/10-livros-sobre-inovacao-para-ler-em-2022.jpg" width="100%">
+                        <p>1- A Tarifa Zero é uma política pública de mobilidade urbana universal [...]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Brain Spirit. Todos os direitos reservados. David Marques de Souza.</p>
+    </footer>
+
+    <!-- JavaScript para esconder/mostrar o conteúdo dos posts -->
+    <script>
+        // Função para mostrar/ocultar o conteúdo ao clicar no título
+        document.querySelectorAll('.toggle-content').forEach((title) => {
+            title.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Inicialmente ocultar todo o conteúdo dos posts
+        document.querySelectorAll('.post-content').forEach((content) => {
+            content.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
